@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -48,7 +48,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-primary-dark);
-  background-color: #000;
+  background-color: #1b1b1b;
 }
 
 address {
@@ -80,6 +80,31 @@ ul {
 }
 
 /*---------------------------------------- HEADER */
+.header {
+  background-color: #33312f;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 64px;
+}
+
 .button {
   font-weight: 600;
   padding: 16px 32px;
@@ -102,7 +127,6 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 /*---------------------------------------- HERO */
@@ -122,9 +146,16 @@ ul {
 }
 
 /*---------------------------------------- ADVANTAGES */
+.advantages-section {
+  background-color: var(--color-brand-light);
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 16px 0;
   color: var(--color-primary-light);
-  background-color: var(--primary-brand);
 }
 
 .advantages-item {
@@ -144,6 +175,16 @@ ul {
 }
 
 /*---------------------------------------- TRADITIONS */
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
@@ -161,9 +202,37 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-text.limited-width {
+  max-width: 335px;
+}
+
+.bakerman-image {
+  border-radius: 200px 200px 0 0;
+}
 /*---------------------------------------- OUR CHEFS */
 .chefs-title {
+  text-align: center;
   margin-bottom: 80px;
+}
+
+.chefs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.chef-card {
+  display: flex;
+  flex-basis: 605px;
+  gap: 30px;
+}
+
+.chef-image {
+  border-radius: 5px 5px 5px 200px;
+}
+
+.chef-text {
+  max-width: 300px;
 }
 
 .chef-name {
@@ -172,7 +241,29 @@ ul {
 }
 
 /*---------------------------------------- FORMATS */
+.format-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 16px;
+  padding: 24px;
+  height: 444px;
+  background-color: #3a2250; /* DELETE */
+}
+
 .formats-title {
+  text-align: center;
   margin-bottom: 80px;
 }
 

@@ -8,18 +8,20 @@
     <title>BakeryShop</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <a href="./index.html"><img src="/imgs/logo.svg" alt="Логотип сайту" /></a>
-        <nav class="header-menu">
-          <ul>
-            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-            <li><a class="link" href="#our-chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html"><img src="/imgs/logo.svg" alt="Логотип сайту" /> </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+              <li><a class="link" href="#our-chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -28,7 +30,7 @@
           <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -40,43 +42,55 @@
       </section>
       <section class="section traditions-section" id="traditions-section">
         <div class="container">
-          <h2 class="section-title traditions-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="highlight uppercase" lang="en">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки
-            та натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="highlight">5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          <img src="/imgs/bakerman.jpg" alt="Фото пекаря" />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="section-title traditions-title">Новий формат традицій</h2>
+              <p class="traditions-text">
+                <span class="highlight uppercase" lang="en">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної
+                випічки та натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text limited-width">
+                Ми працюємо як найвідоміші мережі —
+                <span class="highlight">5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <img class="bakerman-image" src="/imgs/bakerman.jpg" alt="Фото пекаря" />
+          </div>
         </div>
       </section>
       <section class="section" id="our-chefs-section">
         <div class="container">
-          <h2 class="section-title chefs-title">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
-          <article>
-            <h3 class="chef-name">Настя</h3>
-            <img src="/imgs/chef-nastya.jpg" alt="Шеф-кухар Настя" />
-            <p>Привіт, я Настя!</p>
-            <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-            <p>Я випічу для вас найсмачніщі вироби!</p>
-          </article>
-          <article>
-            <h3 class="chef-name">Влад</h3>
-            <img src="/imgs/chef-vlad.jpg" alt="Шеф-кухар Влад" />
-            <p>Привіт, я Влад!</p>
-            <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
-            <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-          </article>
+          <div class="chefs-container">
+            <h2 class="section-title chefs-title">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
+            <div class="chefs">
+              <article class="chef-card">
+                <img class="chef-image" src="/imgs/chef-nastya.jpg" alt="Шеф-кухар Настя" />
+                <div class="chef-text">
+                  <h3 class="chef-name">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
+              </article>
+              <article class="chef-card">
+                <img class="chef-image" src="/imgs/chef-vlad.jpg" alt="Шеф-кухар Влад" />
+                <div class="chef-text">
+                  <h3 class="chef-name">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="section-title formats-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="format-list">
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -86,8 +100,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -97,8 +111,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
